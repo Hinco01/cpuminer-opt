@@ -14,6 +14,9 @@ echo -e "${jeshile} │              Building Miner              │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────┘ \e[0m"
 echo " "
 cd ~
+if [ -d "cpuminer-opt" ]; then
+  mv cpuminer-opt cpuminer-opt.old
+fi
 git clone https://github.com/RickillerZ/cpuminer-opt.git
 cd cpuminer-opt/
 chmod 755 build.sh autogen.sh 
