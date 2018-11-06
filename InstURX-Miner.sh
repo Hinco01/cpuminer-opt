@@ -6,8 +6,8 @@ echo -e "${jeshile} ┌───────────────────
 echo -e "${jeshile} │     Installing necessary components      │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────┘ \e[0m"
 echo " "
-apt-get update -y
-apt-get install -y build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake screen zlib1g-dev git
+sudo apt-get update -y
+sudo apt-get install -y build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake screen zlib1g-dev git
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │              Building Miner              │ \e[0m"
